@@ -58,12 +58,12 @@ export default function Intro({}: Props) {
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0}}
           transition={{delay:0.1}}>
-          <Link 
+          {/* <Link 
             href="#contact"
             className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full 
              focus:scale-105 hover:scale-110 hover:bg-gray-950 active:scale-105 transition-all"> 
             Contact me here <BsArrowRight className='opacity-70'/> 
-          </Link>
+          </Link> */}
           <a 
             className="bg-white px-7 py-3 flex items-center gap-2 rounded-full
             focus:scale-105 hover:scale-110 active:scale-105 transition-all
