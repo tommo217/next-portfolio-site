@@ -48,7 +48,7 @@ export default function Intro({}: Props) {
         initial={{opacity: 0, y:100}}
         animate={{opacity: 1, y:0}}>
           <span className="font-bold"> Hello, I'm Tom.  </span> 
-          I'm a <span className="italic">UBC CS</span> student of class <span className="italic">2024</span>.
+          I'm a <span className="italic">UBC CS</span> student of class <span className="italic">2024</span>. <br/>
           I have over <span className="font-bold">12 months</span> of work experience
            in <span className='underline'>C# </span> and <span className='underline'>Full-stack</span>  development. 
         </motion.p>
@@ -79,7 +79,6 @@ export default function Intro({}: Props) {
           target="_blank">
             <BsLinkedin/>
           </a>
-
         </motion.div>
     </section>
   )
