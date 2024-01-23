@@ -17,8 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-gray-10 text-gray-950 pt-10`}>
-        <div className="bg-[#f9d7d9] -z-10 absolute top-[-8rem] right-[11rem] w-[32rem] h-[32rem] rounded-full blur-[15rem]"></div>
-        <div className="bg-[#d0cbf3] -z-10 absolute top-[-3rem] left-[-3rem] w-[50rem] h-[30rem] rounded-full blur-[15rem] sm:left-[-10rem]"></div>
+        <div className="bg-[#103783] -z-10 absolute top-[-8rem] right-[11rem] w-[32rem] h-[32rem] rounded-full blur-[15rem]"></div>
+        <div className="bg-[#9bafd9] -z-10 absolute top-[-3rem] left-[-3rem] w-[50rem] h-[30rem] rounded-full blur-[15rem] sm:left-[-10rem]"></div>
 
         <Header/>
         {children}
