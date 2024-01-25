@@ -14,11 +14,10 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
-        From my studies and internships, I have worked on a language interpreter, a terrain-data visualization application, a REST API, plus a few full-stack React and Vue websites.
+        <i>I enjoy making complex data accessible and interactible</i>.
       </p>
-
       <p className="mb-3">
-        I have enjoyed working with complex and performant applications that process dense data, while also making them easy to use and look good.
+        So far, I have worked on a terrain-data visualization application, <br/> a REST API, a DSL language compiler, <br/> plus a few full-stack React and Vue websites.
       </p>
     </motion.section>  )
 }

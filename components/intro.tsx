@@ -47,8 +47,8 @@ export default function Intro({}: Props) {
         className='mb-10 mt-10 px-4 text-xl font-medium !leading-[1.5] sm:text-3xl'
         initial={{opacity: 0, y:100}}
         animate={{opacity: 1, y:0}}>
-          <span className="font-bold"> Hello, I'm Tom.  </span> 
-          I'm a <span className="italic">UBC CS</span> student of class <span className="italic">2024</span>. <br/>
+          <span className="font-bold"> Hello, I'm Tom,  </span> <br/>
+          a <span className="italic">UBC CS</span> student of class <span className="italic">2024</span>. <br/>
           I have over <span className="font-bold">12 months</span> of work experience
            in <span className='underline'>C# </span> and <span className='underline'>Full-stack</span>  development. 
         </motion.p>

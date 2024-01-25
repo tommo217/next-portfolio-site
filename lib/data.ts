@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import terrainImg from "@/public/3dTerrainViz.png";
 
 export const links = [
   {
@@ -20,12 +21,12 @@ export const links = [
     hash: "#projects",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
   },
   {
     name: "Contact",
@@ -35,73 +36,88 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "UBC Emerging Media Lab",
+    location: "Vancouver, BC",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022.05-2022.12",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "BGC Engineering",
+    location: "Vancouver, BC",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023.01-2023.09",
   },
+  {
+    title: "iQIYI",
+    location: "",
+    description:
+      "",
+    icon: React.createElement(FaReact),
+    date: "2024.01 - present",
+  },
+  {
+    title: "University of British Columbia",
+    location: "Vancouver, BC",
+    desription:
+      "",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019.09 - 2024.05",
+  }
+
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "3D Terrain Visualization",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Terrain data pipeline and OpenGL-based 3D terrain visualization, as part of my internship at BGC Engineering.",
+    tags: ["C#", "Unity", "OpenGL", "Python", "SQLite"],
+    imageUrl: terrainImg,
   },
   {
-    title: "rmtDev",
+    title: "Course Database API + Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "",
+    tags: [],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Meeting Planner",
+    description:
+      "",
+    tags: ["React", "Node.js", "MongoDB", "Redux"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "DSL Language Compiler",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Java and Antlr-based AST parser in a browser-hosted website for writing 2D games in a custom language. ",
+    tags: ["Java", "ANTLR", "Javascript"],
+    imageUrl: corpcommentImg,
+  },
+  {
+    title: "Unity 3D Tactics Game",
+    description:
+      "A* Pathfinding in a grid-based 3D terrain, in a deployed Steam game.",
+    tags: ["C#", "Unity", "A* Search"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "C#",
+  "Unity",
+  "Java",
   "JavaScript",
   "TypeScript",
+  "SQL",
   "React",
-  "Next.js",
+  "Vue",
   "Node.js",
   "Git",
-  "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
 ] as const;
