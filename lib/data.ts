@@ -93,6 +93,13 @@ export const projectsData = [
     imageUrl: rmtdevImg,
   },
   {
+    title: "Ray-tracing Shader",
+    description:
+      "WebGL and ThreeJS based ray-tracing scene with multiple levels of reflection and refraction.",
+      tags: ["JavaScript", "WebGL", "ThreeJS"],
+      imageUrl: corpcommentImg,
+  },
+  {
     title: "DSL Language Compiler",
     description:
       "Java and Antlr-based AST parser in a browser-hosted website for writing 2D games in a custom language. ",
