@@ -44,13 +44,12 @@ export default function Intro({}: Props) {
             </div>
         </div>
         <motion.p 
-        className='mb-10 mt-10 px-4 text-xl font-medium !leading-[1.5] sm:text-3xl'
+        className='mb-10 mt-10 px-4 text-xl font-medium !leading-[1.5] sm:text-3xl max-w-2xl'
         initial={{opacity: 0, y:100}}
         animate={{opacity: 1, y:0}}>
           <span className="font-bold"> Hello, I'm Tom,  </span> <br/>
-          a <span className="italic">UBC CS</span> student of class <span className="italic">2024</span>. <br/>
-          I have over <span className="font-bold">12 months</span> of work experience
-           in <span className='underline'>C# </span> and <span className='underline'>Full-stack</span>  development. 
+          a <u><i>UBC CS</i></u> student of class <span className="italic">2024</span>. <br/>
+          I have over <span className="font-bold">12 months</span> of work experience in <span className='underline'> C# </span> and <span className='underline'>Typescript</span>  development. 
         </motion.p>
 
         {/* buttons */}
