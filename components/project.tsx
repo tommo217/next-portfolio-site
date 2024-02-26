@@ -22,7 +22,7 @@ export default function Project({title , description, tags, imageUrl}: ProjectPr
             </ul>
         </div>
 
-        <Image src={imageUrl} alt="Project Preview" quality={95}
+        <Image src={imageUrl} alt="Project Preview" quality={90}
         className='absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         grout-even:right-[initial] group-even:-left-40
         group-hover:-translate-x-3

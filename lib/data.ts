@@ -2,10 +2,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import terrainImg from "@/public/3dTerrainViz.png";
+import API2Img from "@/public/API1-alt.png";
+import meetingPlannerImg from "@/public/meetingPlanner-1.png";
+import raytracingImg from "@/public/raytracing.png";
+import jetejImg from "@/public/jetej-1.png";
+import tangoImg from "@/public/constTango.jpg";
 
 export const links = [
   {
@@ -81,50 +83,46 @@ export const projectsData = [
   {
     title: "Course Database API + Website",
     description:
-      "",
-    tags: [],
-    imageUrl: wordanalyticsImg,
+      "RESTful API for filtering, sorting, aggregation and transformation of course data, with parser for a custom query language.",
+    tags: ["Typescript", "Node.js", "TDD"],
+    imageUrl: API2Img,
   },
   {
     title: "Meeting Planner",
     description:
-      "",
+      "Responsive web app for scheduling meetings, with user authentication and MongoDB database.",
     tags: ["React", "Node.js", "MongoDB", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: meetingPlannerImg,
   },
   {
     title: "Ray-tracing Shader",
     description:
       "WebGL and ThreeJS based ray-tracing scene with multiple levels of reflection and refraction.",
       tags: ["JavaScript", "WebGL", "ThreeJS"],
-      imageUrl: corpcommentImg,
+      imageUrl: raytracingImg,
   },
   {
     title: "DSL Language Compiler",
     description:
       "Java and Antlr-based AST parser in a browser-hosted website for writing 2D games in a custom language. ",
     tags: ["Java", "ANTLR", "Javascript"],
-    imageUrl: corpcommentImg,
+    imageUrl: jetejImg,
   },
   {
-    title: "Unity 3D Tactics Game",
+    title: "Constellation Tango - A 2.5D Tactics Game",
     description:
-      "A* Pathfinding in a grid-based 3D terrain, in a deployed Steam game.",
-    tags: ["C#", "Unity", "A* Search"],
-    imageUrl: wordanalyticsImg,
+      "A* Pathfinding in a grid-based 3D terrain written for a steam-deployed tactics game.",
+    tags: ["C#", "Unity", "A* Algorithm"],
+    imageUrl: tangoImg,
   },
 ] as const;
 
 export const skillsData = [
   "C#",
-  "Unity",
   "Java",
-  "JavaScript",
   "TypeScript",
-  "SQL",
+  "Unity",
   "React",
   "Vue",
-  "Node.js",
   "Git",
-  "MongoDB",
 ] as const;
