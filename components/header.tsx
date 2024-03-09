@@ -10,7 +10,8 @@ export default function Header() {
 
   return (
     <header id="navbar" className="z-[999] relative">
-      <motion.div className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border-black border-opacity-40 bg-gray-50 bg-opacity-80 shadow-lg shadow-black/[0.15] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
+      <motion.div className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border-black border-opacity-40 bg-gray-50 bg-opacity-80 shadow-lg shadow-black/[0.15] backdrop-blur-[0.5rem] 
+      sm:top-6 sm:h-[3.25rem] sm:w-[20rem] sm:rounded-full" // sm applies to 640px or wider; 36 rem for 6 elements
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >

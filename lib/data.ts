@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { StaticImageData } from "next/image";
 import terrainImg from "@/public/3dTerrainViz.png";
 import API2Img from "@/public/API1-alt.png";
 import meetingPlannerImg from "@/public/meetingPlanner-1.png";
@@ -22,18 +23,18 @@ export const links = [
     name: "Projects",
     hash: "#projects",
   },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  // {
+  //   name: "Experience",
+  //   hash: "#experience",
+  // },
+  // {
+  //   name: "Skills",
+  //   hash: "#skills",
+  // },
+  // {
+  //   name: "Contact",
+  //   hash: "#contact",
+  // },
 ] as const;
 
 export const experiencesData = [
@@ -72,7 +73,16 @@ export const experiencesData = [
 
 ] as const;
 
-export const projectsData = [
+export interface ProjectProps{
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData;
+  github?: string;
+  link?: string;
+}
+
+export const projectsData: ProjectProps[] = [
   {
     title: "3D Terrain Visualization",
     description:
@@ -82,6 +92,7 @@ export const projectsData = [
   },
   {
     title: "Course Database API + Website",
+    github: "https://github.com/tommo217/course-database-ts",
     description:
       "RESTful API for filtering, sorting, aggregation and transformation of course data, with parser for a custom query language.",
     tags: ["Typescript", "Node.js", "TDD"],
@@ -89,6 +100,7 @@ export const projectsData = [
   },
   {
     title: "Meeting Planner",
+    link: "https://meeting-planner.pages.dev/",
     description:
       "Responsive web app for scheduling meetings, with user authentication and MongoDB database.",
     tags: ["React", "Node.js", "MongoDB", "Redux"],
@@ -102,7 +114,8 @@ export const projectsData = [
       imageUrl: raytracingImg,
   },
   {
-    title: "DSL Language Compiler",
+    title: "DSL Language & Compiler",
+    github: "https://github.com/tommo217/jetej",
     description:
       "Java and Antlr-based AST parser in a browser-hosted website for writing 2D games in a custom language. ",
     tags: ["Java", "ANTLR", "Javascript"],
@@ -110,6 +123,7 @@ export const projectsData = [
   },
   {
     title: "Constellation Tango - A 2.5D Tactics Game",
+    link: "https://store.steampowered.com/app/1721360/Constellation_Tango/",
     description:
       "A* Pathfinding in a grid-based 3D terrain written for a steam-deployed tactics game.",
     tags: ["C#", "Unity", "A* Algorithm"],
