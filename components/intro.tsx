@@ -67,7 +67,7 @@ export default function Intro({}: Props) {
             className="bg-white px-7 py-3 flex items-center gap-2 rounded-full
             focus:scale-105 hover:scale-110 active:scale-105 transition-all
             border border-black/10"
-            href="/resume.pdf"
+            href="/Tom-Mo-resume.pdf"
             download> 
             Download CV <HiDownload/> 
           </a>
