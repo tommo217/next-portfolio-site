@@ -48,8 +48,8 @@ export default function Intro({}: Props) {
         initial={{opacity: 0, y:100}}
         animate={{opacity: 1, y:0}}>
           <span className="font-bold"> Hello, I'm Tom,  </span> <br/>
-          a <u><i>UBC CS</i></u> student of class <span className="italic">2024</span>. <br/>
-          I have over <span className="font-bold">12 months</span> of work experience in <span className='underline'> C# </span> and <span className='underline'>Typescript</span>  development. 
+          a <a href="https://www.cs.ubc.ca/"><u>UBC CS</u></a> graduate of class <span className="italic">2024</span>. <br/>
+          I have over <span className="font-bold">18 months</span> of work experience in <span className='underline'> C# </span> and <span className='underline'>Typescript</span>  development. 
         </motion.p>
 
         {/* buttons */}
